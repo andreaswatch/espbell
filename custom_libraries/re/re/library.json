@@ -1,0 +1,20 @@
+{
+    "name": "re",
+    "version": "1.0.0",
+
+
+    "build": {
+        "unflags": "-std=gnu++11",        
+        "flags": "-std=c99 -Wno-unused-function -Wwrite-strings",
+        "srcFilter": [
+            "-<*/dns/>",
+            "-<*/win32/>",
+            "-<*/darwin/>",
+            "-<*/apple/>",
+            "-<*/aes/>"
+        ]
+    },
+    
+    "frameworks": "arduino",
+    "platforms": "*"
+}

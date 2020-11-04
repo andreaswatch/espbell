@@ -1,0 +1,16 @@
+{
+    "name": "baresip",
+    "version": "1.0.0",
+
+    "build": {
+        "unflags": "-std=gnu++11",             
+        "flags": "-std=c99 -Wno-unused-function -Wwrite-strings",
+        "srcFilter": [
+            "-<config.c>",
+            "+<../static.h>"
+        ]
+    },
+    
+    "frameworks": "arduino",
+    "platforms": "*"
+}
